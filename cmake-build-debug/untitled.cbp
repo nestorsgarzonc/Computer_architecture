@@ -87,9 +87,6 @@
 		<Unit filename="C:/Users/nesto/CLionProjects/untitled/main.cpp">
 			<Option target="untitled"/>
 		</Unit>
-		<Unit filename="C:/Users/nesto/CLionProjects/untitled/mainFSM.cpp">
-			<Option target="untitled"/>
-		</Unit>
 		<Unit filename="C:/Users/nesto/CLionProjects/untitled/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -13,7 +13,7 @@ State presentState, nextState;
 
 struct memWord {
     string output;
-    State nextState[4];
+    State nextState[7];
 };
 
 // ROM memory
@@ -27,15 +27,14 @@ int main() {
     setup();
     while (true)
         loop();
-    return 0;
 }
 
 void setup() {
-    ROM[0] = {"R", {S1, S0, S0, S0}};
-    ROM[1] = {"Y", {S1, S2, S3, S1}};
-    ROM[2] = {"G", {S2, S2, S2, S4}};
-    ROM[3] = {"B", {S4, S3, S3, S3}};
-    ROM[4] = {"G-Y", {S4, S4, S0, S4}};
+    ROM[0] = {"R, B", {S0, S0, S0, S1, S2, S3, S0}};
+    ROM[1] = {"G, Y", {S1, S4, S1, S1, S1, S1, S1}};
+    ROM[2] = {"G", {S2, S2, S2, S2, S2, S2, S4}};
+    ROM[3] = {"Y", {S3, S3, S2, S3, S3, S3, S3}};
+    ROM[4] = {"R, Y, G, B", {S0, S4, S4, S4, S4, S4, S4}};
 
     presentState = S0;
     output = ROM[presentState].output;
@@ -45,9 +44,11 @@ void setup() {
 }
 
 void loop() {
-    cout << "input? : ";
+    cout << "Input: ";
     cin >> input;
-
+    /// States has the following range [1, 7]
+    /// I do [input--] to start counting from zero, not from one
+    input--;
     // next state selector (Multiplexer)
     nextState = ROM[presentState].nextState[input];
     presentState = nextState;

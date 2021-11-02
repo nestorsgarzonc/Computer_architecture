@@ -142,30 +142,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\main.cpp.s
 .PHONY : main.cpp.s
 
-mainFSM.obj: mainFSM.cpp.obj
-.PHONY : mainFSM.obj
-
-# target to build an object file
-mainFSM.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\mainFSM.cpp.obj
-.PHONY : mainFSM.cpp.obj
-
-mainFSM.i: mainFSM.cpp.i
-.PHONY : mainFSM.i
-
-# target to preprocess a source file
-mainFSM.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\mainFSM.cpp.i
-.PHONY : mainFSM.cpp.i
-
-mainFSM.s: mainFSM.cpp.s
-.PHONY : mainFSM.s
-
-# target to generate assembly for a file
-mainFSM.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\untitled.dir\mainFSM.cpp.s
-.PHONY : mainFSM.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -178,9 +154,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... mainFSM.obj
-	@echo ... mainFSM.i
-	@echo ... mainFSM.s
 .PHONY : help
 
 
