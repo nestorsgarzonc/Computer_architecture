@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/nesto/CLionProjects/untitled/main.cpp
+iostream
+-
+string
+-
+
+C:/Users/nesto/CLionProjects/untitled/mainFSM.cpp
+iostream
+-
+string
+-
+
